@@ -12,7 +12,7 @@ const CONFIG = {
   subtitulo: "Painel de Metas Individuais",
 
   // Seu nome / patente (aparece no site)
-  efetivo: "Wesley",
+  efetivo: "[GT]Wesley1BTL",
 
   // -----------------------------------------------------------
   // SUAS METAS

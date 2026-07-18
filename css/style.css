@@ -49,6 +49,16 @@ header {
   border-bottom: 3px solid var(--red);
   padding: 36px 20px 28px;
   text-align: center;
+  animation: recoil-kick 0.8s ease-out 1;
+}
+
+@keyframes recoil-kick {
+  0% { transform: translate(0,0) rotate(0deg); }
+  8% { transform: translate(3px,-7px) rotate(-0.7deg); }
+  20% { transform: translate(-2px,3px) rotate(0.5deg); }
+  35% { transform: translate(1px,-2px) rotate(-0.25deg); }
+  55% { transform: translate(-1px,1px) rotate(0.1deg); }
+  100% { transform: translate(0,0) rotate(0deg); }
 }
 
 header::after {
@@ -70,6 +80,52 @@ header::after {
   45% { opacity: 1; }
   55%, 100% { left: 130%; opacity: 0; }
 }
+
+/* TIROS TRAÇANTES */
+.tracer {
+  position: absolute;
+  height: 2px;
+  width: 130px;
+  left: -20%;
+  background: linear-gradient(90deg, transparent, rgba(255,205,140,0.85), #fff);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(255,190,110,0.9), 0 0 16px rgba(255,110,50,0.55);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tracer-1 { top: 22%; transform: rotate(12deg); animation: tracer-fire 6.5s ease-in infinite; animation-delay: 0.4s; }
+.tracer-2 { top: 62%; transform: rotate(-8deg); animation: tracer-fire 6.5s ease-in infinite; animation-delay: 0.65s; }
+.tracer-3 { top: 40%; transform: rotate(4deg); animation: tracer-fire 8.5s ease-in infinite; animation-delay: 3.2s; }
+
+@keyframes tracer-fire {
+  0%, 91% { opacity: 0; left: -20%; }
+  92% { opacity: 1; }
+  96% { opacity: 1; left: 115%; }
+  100% { opacity: 0; left: 115%; }
+}
+
+/* FLASHES DE DISPARO */
+.muzzle-spark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,220,150,0.95) 0%, rgba(255,140,60,0.5) 35%, transparent 70%);
+  filter: blur(1px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes spark-flash {
+  0%, 95% { opacity: 0; transform: scale(0.5); }
+  96% { opacity: 1; transform: scale(1.3); }
+  97.5% { opacity: 0.7; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.8); }
+}
+
+.muzzle-spark-1 { top: 14%; left: 12%; animation: spark-flash 5s ease-in-out infinite; }
+.muzzle-spark-2 { top: 68%; right: 9%; animation: spark-flash 6.2s ease-in-out infinite; animation-delay: 2s; }
 
 .emblema-wrap {
   position: relative;
@@ -171,6 +227,10 @@ header::after {
 .bullet-hole-a { top: 14px; left: 8%; }
 .bullet-hole-b { bottom: 10px; right: 10%; width: 34px; height: 34px; }
 .bullet-hole-c { top: 50%; left: 6%; width: 26px; height: 26px; transform: translateY(-50%); opacity: 0.45; }
+.bullet-hole-d { top: 8%; right: 6%; width: 28px; height: 28px; opacity: 0.5; }
+.bullet-hole-e { bottom: 22px; left: 16%; width: 22px; height: 22px; opacity: 0.4; }
+.bullet-hole-f { bottom: 8px; right: 8%; width: 24px; height: 24px; opacity: 0.4; }
+.bullet-hole-g { top: 10px; right: 12px; width: 26px; height: 26px; opacity: 0.55; }
 
 #batalhao-nome {
   font-family: 'Orbitron', 'Oswald', sans-serif;
