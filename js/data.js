@@ -58,6 +58,23 @@ const CONFIG = {
   // -----------------------------------------------------------
   prints: [
     { categoria: "treinos", arquivo: "fotos/destaque-15-07.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
-    { categoria: "treinos", arquivo: "fotos/destaque-16-07.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true }
+    { categoria: "treinos", arquivo: "fotos/destaque-16-07.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
+
+    { categoria: "treinos", arquivo: "fotos/treino-15-07-1.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
+    { categoria: "treinos", arquivo: "fotos/treino-15-07-2.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
+    { categoria: "treinos", arquivo: "fotos/treino-15-07-3.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #3" },
+    { categoria: "treinos", arquivo: "fotos/treino-15-07-4.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #4" },
+
+    { categoria: "treinos", arquivo: "fotos/treino-16-07-1.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
+    { categoria: "treinos", arquivo: "fotos/treino-16-07-2.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
+    { categoria: "treinos", arquivo: "fotos/treino-16-07-3.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #3" },
+    { categoria: "treinos", arquivo: "fotos/treino-16-07-4.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #4" },
+    { categoria: "treinos", arquivo: "fotos/treino-16-07-5.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #5" },
+
+    { categoria: "treinos", arquivo: "fotos/treino-17-07-outro-btl.png", data: "17/07/2026", descricao: "Treino conjunto realizado com o 3º Batalhão (FZN & Reffy)" },
+
+    { categoria: "operacoes", arquivo: "fotos/operacao-blitz-16-07.png", data: "16/07/2026", descricao: "Operação/Blitz em campo" },
+
+    { categoria: "info", arquivoAntes: "fotos/info-antes.png", arquivoDepois: "fotos/info-depois.png", data: "15/07/2026 a 18/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 1 → 91, Prisões efetuadas 11 → 137" }
   ]
 };
