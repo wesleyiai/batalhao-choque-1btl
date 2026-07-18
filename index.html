@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalhão CHOQUE 1BTL — Painel de Metas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1 id="batalhao-nome">BATALHÃO CHOQUE 1BTL</h1>
+    <p id="batalhao-subtitulo">Painel de Metas Individuais</p>
+    <div class="efetivo-tag">Efetivo: <span id="efetivo-nome"></span></div>
+  </header>
+
+  <div class="container">
+
+    <div class="resumo">
+      <div class="resumo-topo">
+        <span class="resumo-titulo">Progresso Geral</span>
+        <span id="resumo-pct">0%</span>
+      </div>
+      <div class="barra-fundo-lg">
+        <div id="resumo-barra" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <h2 class="secao-titulo">Metas</h2>
+    <div id="metas-container"></div>
+
+    <h2 class="secao-titulo">Registros / Prints</h2>
+    <div id="filtros-container"></div>
+    <div id="prints-container"></div>
+    <div id="prints-vazio">Nenhum print adicionado ainda nesta categoria.</div>
+
+  </div>
+
+  <footer>Atualizado manualmente pelo efetivo. Uso interno do batalhão.</footer>
+
+  <div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
