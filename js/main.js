@@ -48,7 +48,7 @@ function renderResumo() {
 
 function renderFiltros() {
   const container = document.getElementById("filtros-container");
-  const categorias = [{ id: "todos", nome: "Todos" }, ...CONFIG.metas.map(m => ({ id: m.id, nome: m.nome }))];
+  const categorias = [{ id: "todos", nome: "Todos" }, ...CONFIG.categoriasPrint.map(c => ({ id: c.id, nome: c.nome }))];
 
   container.innerHTML = "";
   categorias.forEach((cat, i) => {
@@ -81,15 +81,16 @@ function renderPrints(categoria) {
   vazio.style.display = "none";
 
   lista.slice().reverse().forEach(print => {
-    const metaInfo = CONFIG.metas.find(m => m.id === print.categoria);
+    const catInfo = CONFIG.categoriasPrint.find(c => c.id === print.categoria);
     const card = document.createElement("div");
     card.className = "print-card";
     card.innerHTML = `
-      <img src="${print.arquivo}" alt="${print.descricao || ''}" loading="lazy" class="print-img">
+      <img src="${print.arquivo}" alt="${print.antes || ''}" loading="lazy" class="print-img">
       <div class="print-info">
-        <span class="print-categoria">${metaInfo ? metaInfo.icone + " " + metaInfo.nome : print.categoria}</span>
+        <span class="print-categoria">${catInfo ? catInfo.icone + " " + catInfo.nome : print.categoria}</span>
         <span class="print-data">${print.data || ""}</span>
-        ${print.descricao ? `<p class="print-desc">${print.descricao}</p>` : ""}
+        ${print.antes ? `<div class="print-antes-depois"><span class="print-label">Antes</span><p>${print.antes}</p></div>` : ""}
+        ${print.depois ? `<div class="print-antes-depois"><span class="print-label">Depois</span><p>${print.depois}</p></div>` : ""}
       </div>
     `;
     container.appendChild(card);

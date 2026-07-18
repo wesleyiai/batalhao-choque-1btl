@@ -276,8 +276,24 @@ h2.secao-titulo {
   color: var(--text-dim);
 }
 
-.print-desc {
-  margin: 4px 0 0;
+.print-antes-depois {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.print-antes-depois .print-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 2px;
+}
+
+.print-antes-depois p {
+  margin: 0;
   font-size: 13px;
   color: var(--text);
 }
