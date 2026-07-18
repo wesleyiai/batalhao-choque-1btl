@@ -88,18 +88,28 @@ function renderPrints(categoria) {
     const catInfo = CONFIG.categoriasPrint.find(c => c.id === print.categoria);
     const card = document.createElement("div");
     card.className = "print-card" + (print.destaque ? " print-destaque" : "");
+
+    const imagemHtml = print.categoria === "info"
+      ? `
+      <div class="print-antesdepois-imgs">
+        <div class="print-img-wrap">
+          <span class="print-img-label">Antes</span>
+          <img src="${print.arquivoAntes}" alt="Antes" loading="lazy" class="print-img">
+        </div>
+        <div class="print-img-wrap">
+          <span class="print-img-label">Depois</span>
+          <img src="${print.arquivoDepois}" alt="Depois" loading="lazy" class="print-img">
+        </div>
+      </div>`
+      : `<img src="${print.arquivo}" alt="${print.descricao || ''}" loading="lazy" class="print-img">`;
+
     card.innerHTML = `
       ${print.destaque ? `<span class="print-destaque-selo">⭐ Destaque do Treino</span>` : ""}
-      <img src="${print.arquivo}" alt="${print.antes || ''}" loading="lazy" class="print-img">
+      ${imagemHtml}
       <div class="print-info">
         <span class="print-categoria">${catInfo ? catInfo.icone + " " + catInfo.nome : print.categoria}</span>
         <span class="print-data">${print.data || ""}</span>
-        ${(print.antes || print.depois) ? `
-        <div class="print-infobox">
-          <span class="print-infobox-titulo">Info</span>
-          ${print.antes ? `<div class="print-antes-depois"><span class="print-label">Antes</span><p>${print.antes}</p></div>` : ""}
-          ${print.depois ? `<div class="print-antes-depois"><span class="print-label">Depois</span><p>${print.depois}</p></div>` : ""}
-        </div>` : ""}
+        ${print.descricao ? `<p class="print-desc">${print.descricao}</p>` : ""}
       </div>
     `;
     container.appendChild(card);
