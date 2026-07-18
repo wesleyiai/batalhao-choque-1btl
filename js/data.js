@@ -57,6 +57,7 @@ const CONFIG = {
   //      { categoria: "info", arquivoAntes: "fotos/antes1.png", arquivoDepois: "fotos/depois1.png", data: "18/07/2026", descricao: "Comprovação de abates e prisões" },
   // -----------------------------------------------------------
   prints: [
-
+    { categoria: "treinos", arquivo: "fotos/destaque-15-07.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
+    { categoria: "treinos", arquivo: "fotos/destaque-16-07.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true }
   ]
 };
