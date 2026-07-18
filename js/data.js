@@ -43,9 +43,14 @@ const CONFIG = {
   //   3. "categoria" tem que ser um destes: treinos, operacoes
   //   4. "antes" = como estava a situação antes
   //      "depois" = o que aconteceu / resultado
+  //   5. "destaque: true" é opcional — só coloque essa parte quando
+  //      você foi o destaque daquele treino. Ela adiciona um selo
+  //      "⭐ Destaque do Treino" no print e ele aparece primeiro na
+  //      categoria Treinos. Se não foi destaque, apague essa parte
+  //      da linha (incluindo a vírgula antes dela).
   //
   // Exemplo (remova as barras // do começo das linhas para ativar):
-  // { categoria: "treinos", arquivo: "fotos/treino1.png", data: "18/07/2026", antes: "Efetivo com dificuldade na formação de abordagem", depois: "Formação treinada e aprovada por todos os presentes" },
+  // { categoria: "treinos", arquivo: "fotos/treino1.png", data: "18/07/2026", antes: "Efetivo com dificuldade na formação de abordagem", depois: "Formação treinada e aprovada por todos os presentes", destaque: true },
   // -----------------------------------------------------------
   prints: [
 

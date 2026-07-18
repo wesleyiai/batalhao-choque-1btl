@@ -82,11 +82,14 @@ function renderPrints(categoria) {
   }
   vazio.style.display = "none";
 
-  lista.slice().reverse().forEach(print => {
+  lista.slice().reverse()
+    .sort((a, b) => (b.destaque ? 1 : 0) - (a.destaque ? 1 : 0))
+    .forEach(print => {
     const catInfo = CONFIG.categoriasPrint.find(c => c.id === print.categoria);
     const card = document.createElement("div");
-    card.className = "print-card";
+    card.className = "print-card" + (print.destaque ? " print-destaque" : "");
     card.innerHTML = `
+      ${print.destaque ? `<span class="print-destaque-selo">⭐ Destaque do Treino</span>` : ""}
       <img src="${print.arquivo}" alt="${print.antes || ''}" loading="lazy" class="print-img">
       <div class="print-info">
         <span class="print-categoria">${catInfo ? catInfo.icone + " " + catInfo.nome : print.categoria}</span>
