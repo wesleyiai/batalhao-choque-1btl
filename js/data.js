@@ -58,7 +58,9 @@ const CONFIG = {
   // -----------------------------------------------------------
   prints: [
     { categoria: "treinos", arquivo: "fotos/destaque-15-07.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
+    { categoria: "treinos", arquivo: "fotos/destaque-15-07-b.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
     { categoria: "treinos", arquivo: "fotos/destaque-16-07.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
+    { categoria: "treinos", arquivo: "fotos/destaque-16-07-b.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
 
     { categoria: "treinos", arquivo: "fotos/treino-15-07-1.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
     { categoria: "treinos", arquivo: "fotos/treino-15-07-2.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
