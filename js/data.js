@@ -22,8 +22,7 @@ const CONFIG = {
   metas: [
     { id: "abates", nome: "Abates de Traficantes", atual: 91, meta: 15, icone: "🎯" },
     { id: "prisoes", nome: "Prisões", atual: 137, meta: 25, icone: "🚔" },
-    { id: "treinos", nome: "Treinos", atual: 10, meta: 20, icone: "🏋️" },
-    { id: "patrulhas", nome: "Patrulhas", atual: 0, meta: 10, icone: "🛡️" }
+    { id: "treinos", nome: "Treinos", atual: 10, meta: 20, icone: "🏋️" }
   ],
 
   // -----------------------------------------------------------
@@ -33,7 +32,7 @@ const CONFIG = {
   // -----------------------------------------------------------
   categoriasPrint: [
     { id: "treinos", nome: "Treinos", icone: "🏋️" },
-    { id: "operacoes", nome: "Operações", icone: "🚨" }
+    { id: "operacoes", nome: "Operação/Blitz", icone: "🚨" }
   ],
 
   // -----------------------------------------------------------

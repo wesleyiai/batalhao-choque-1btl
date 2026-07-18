@@ -15,7 +15,8 @@ function renderMetas() {
   container.innerHTML = "";
 
   CONFIG.metas.forEach(meta => {
-    const pct = Math.min(100, Math.round((meta.atual / meta.meta) * 100));
+    const pct = meta.meta > 0 ? Math.round((meta.atual / meta.meta) * 100) : 0;
+    const larguraBarra = Math.min(100, pct);
     const card = document.createElement("div");
     card.className = "meta-card";
     card.innerHTML = `
@@ -29,7 +30,7 @@ function renderMetas() {
         <span class="meta-alvo">${meta.meta}</span>
       </div>
       <div class="barra-fundo">
-        <div class="barra-preenchida" style="width: ${pct}%"></div>
+        <div class="barra-preenchida" style="width: ${larguraBarra}%"></div>
       </div>
       <div class="meta-pct">${pct}%</div>
     `;
@@ -40,10 +41,11 @@ function renderMetas() {
 function renderResumo() {
   const totalAtual = CONFIG.metas.reduce((s, m) => s + m.atual, 0);
   const totalMeta = CONFIG.metas.reduce((s, m) => s + m.meta, 0);
-  const pctGeral = totalMeta > 0 ? Math.min(100, Math.round((totalAtual / totalMeta) * 100)) : 0;
+  const pctGeral = totalMeta > 0 ? Math.round((totalAtual / totalMeta) * 100) : 0;
+  const larguraBarra = Math.min(100, pctGeral);
 
   document.getElementById("resumo-pct").textContent = pctGeral + "%";
-  document.getElementById("resumo-barra").style.width = pctGeral + "%";
+  document.getElementById("resumo-barra").style.width = larguraBarra + "%";
 }
 
 function renderFiltros() {
@@ -89,8 +91,12 @@ function renderPrints(categoria) {
       <div class="print-info">
         <span class="print-categoria">${catInfo ? catInfo.icone + " " + catInfo.nome : print.categoria}</span>
         <span class="print-data">${print.data || ""}</span>
-        ${print.antes ? `<div class="print-antes-depois"><span class="print-label">Antes</span><p>${print.antes}</p></div>` : ""}
-        ${print.depois ? `<div class="print-antes-depois"><span class="print-label">Depois</span><p>${print.depois}</p></div>` : ""}
+        ${(print.antes || print.depois) ? `
+        <div class="print-infobox">
+          <span class="print-infobox-titulo">Info</span>
+          ${print.antes ? `<div class="print-antes-depois"><span class="print-label">Antes</span><p>${print.antes}</p></div>` : ""}
+          ${print.depois ? `<div class="print-antes-depois"><span class="print-label">Depois</span><p>${print.depois}</p></div>` : ""}
+        </div>` : ""}
       </div>
     `;
     container.appendChild(card);

@@ -276,10 +276,25 @@ h2.secao-titulo {
   color: var(--text-dim);
 }
 
-.print-antes-depois {
-  margin-top: 6px;
-  padding-top: 6px;
+.print-infobox {
+  margin-top: 8px;
+  padding-top: 8px;
   border-top: 1px solid var(--border);
+}
+
+.print-infobox-titulo {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.print-antes-depois + .print-antes-depois {
+  margin-top: 6px;
 }
 
 .print-antes-depois .print-label {
