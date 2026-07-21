@@ -20,9 +20,9 @@ const CONFIG = {
   // Para mudar o objetivo, troque o número "meta".
   // -----------------------------------------------------------
   metas: [
-    { id: "abates", nome: "Abates de Traficantes", atual: 91, meta: 15, icone: "🎯" },
-    { id: "prisoes", nome: "Prisões", atual: 137, meta: 25, icone: "🚔" },
-    { id: "treinos", nome: "Treinos", atual: 10, meta: 20, icone: "🏋️" }
+    { id: "abates", nome: "Abates de Traficantes", atual: 0, meta: 15, icone: "🎯" },
+    { id: "prisoes", nome: "Prisões", atual: 0, meta: 25, icone: "🚔" },
+    { id: "treinos", nome: "Treinos", atual: 0, meta: 20, icone: "🏋️" }
   ],
 
   // -----------------------------------------------------------
@@ -58,26 +58,5 @@ const CONFIG = {
   //      { categoria: "info", arquivoAntes: "fotos/antes1.png", arquivoDepois: "fotos/depois1.png", data: "18/07/2026", descricao: "Comprovação de abates e prisões" },
   // -----------------------------------------------------------
   prints: [
-    { categoria: "destaques", arquivo: "fotos/destaque-15-07.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
-    { categoria: "destaques", arquivo: "fotos/destaque-15-07-b.png", data: "15/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
-    { categoria: "destaques", arquivo: "fotos/destaque-16-07.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
-    { categoria: "destaques", arquivo: "fotos/destaque-16-07-b.png", data: "16/07/2026", descricao: "Reconhecido como destaque do treino pelo Tenente da GATE", destaque: true },
-
-    { categoria: "treinos", arquivo: "fotos/treino-15-07-1.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
-    { categoria: "treinos", arquivo: "fotos/treino-15-07-2.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
-    { categoria: "treinos", arquivo: "fotos/treino-15-07-3.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #3" },
-    { categoria: "treinos", arquivo: "fotos/treino-15-07-4.png", data: "15/07/2026", descricao: "Treino com Tenente Coronel Skinka #4" },
-
-    { categoria: "treinos", arquivo: "fotos/treino-16-07-1.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
-    { categoria: "treinos", arquivo: "fotos/treino-16-07-2.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
-    { categoria: "treinos", arquivo: "fotos/treino-16-07-3.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #3" },
-    { categoria: "treinos", arquivo: "fotos/treino-16-07-4.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #4" },
-    { categoria: "treinos", arquivo: "fotos/treino-16-07-5.png", data: "16/07/2026", descricao: "Treino com Tenente Coronel Skinka #5" },
-
-    { categoria: "treinos", arquivo: "fotos/treino-17-07-outro-btl.png", data: "17/07/2026", descricao: "Treino conjunto realizado com o 3º Batalhão (FZN & Reffy)" },
-
-    { categoria: "operacoes", arquivo: "fotos/operacao-blitz-16-07.png", data: "16/07/2026", descricao: "Operação/Blitz em campo" },
-
-    { categoria: "info", arquivoAntes: "fotos/info-antes.png", arquivoDepois: "fotos/info-depois.png", data: "15/07/2026 a 18/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 1 → 91, Prisões efetuadas 11 → 137" }
   ]
 };
