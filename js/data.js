@@ -20,8 +20,8 @@ const CONFIG = {
   // Para mudar o objetivo, troque o número "meta".
   // -----------------------------------------------------------
   metas: [
-    { id: "abates", nome: "Abates de Traficantes", atual: 0, meta: 15, icone: "🎯" },
-    { id: "prisoes", nome: "Prisões", atual: 0, meta: 25, icone: "🚔" },
+    { id: "abates", nome: "Abates de Traficantes", atual: 215, meta: 15, icone: "🎯" },
+    { id: "prisoes", nome: "Prisões", atual: 288, meta: 25, icone: "🚔" },
     { id: "treinos", nome: "Treinos", atual: 5, meta: 20, icone: "🏋️" }
   ],
 
@@ -61,6 +61,8 @@ const CONFIG = {
     { categoria: "treinos", arquivo: "fotos/treino-20-07-1.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #1" },
     { categoria: "treinos", arquivo: "fotos/treino-20-07-2.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #2" },
     { categoria: "treinos", arquivo: "fotos/treino-20-07-3.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #4" },
-    { categoria: "treinos", arquivo: "fotos/treino-20-07-4.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #5 - 5 treinos concluídos" }
+    { categoria: "treinos", arquivo: "fotos/treino-20-07-4.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #5 - 5 treinos concluídos" },
+
+    { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-2.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 288" }
   ]
 };
