@@ -21,7 +21,7 @@ const CONFIG = {
   // -----------------------------------------------------------
   metas: [
     { id: "abates", nome: "Abates de Traficantes", atual: 215, meta: 15, icone: "🎯" },
-    { id: "prisoes", nome: "Prisões", atual: 288, meta: 25, icone: "🚔" },
+    { id: "prisoes", nome: "Prisões", atual: 314, meta: 25, icone: "🚔" },
     { id: "treinos", nome: "Treinos", atual: 20, meta: 20, icone: "🏋️" }
   ],
 
@@ -79,6 +79,7 @@ const CONFIG = {
     { categoria: "treinos", arquivo: "fotos/treino-21-07-14.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #14" },
     { categoria: "treinos", arquivo: "fotos/treino-21-07-15.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #15 - 15 treinos concluídos, meta batida!" },
 
-    { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-2.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 288" }
+    { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-2.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 288" },
+    { categoria: "info", arquivoAntes: "fotos/info-antes-3.png", arquivoDepois: "fotos/info-depois-3.png", data: "21/07/2026", descricao: "Comprovação de progresso: Prisões efetuadas 288 → 314" }
   ]
 };
