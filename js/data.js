@@ -22,7 +22,7 @@ const CONFIG = {
   metas: [
     { id: "abates", nome: "Abates de Traficantes", atual: 215, meta: 15, icone: "🎯" },
     { id: "prisoes", nome: "Prisões", atual: 288, meta: 25, icone: "🚔" },
-    { id: "treinos", nome: "Treinos", atual: 5, meta: 20, icone: "🏋️" }
+    { id: "treinos", nome: "Treinos", atual: 20, meta: 20, icone: "🏋️" }
   ],
 
   // -----------------------------------------------------------
@@ -62,6 +62,22 @@ const CONFIG = {
     { categoria: "treinos", arquivo: "fotos/treino-20-07-2.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #2" },
     { categoria: "treinos", arquivo: "fotos/treino-20-07-3.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #4" },
     { categoria: "treinos", arquivo: "fotos/treino-20-07-4.png", data: "20/07/2026", descricao: "Treino com Tenentes MG, Reffy e Cel KNZ #5 - 5 treinos concluídos" },
+
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-1.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #1" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-2.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #2" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-3.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #3" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-4.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #4" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-5.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #5" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-6.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #6" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-7.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #7" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-8.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #8" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-9.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #9" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-10.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #10" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-11.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #11" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-12.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #12" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-13.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #13" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-14.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #14" },
+    { categoria: "treinos", arquivo: "fotos/treino-21-07-15.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #15 - 15 treinos concluídos, meta batida!" },
 
     { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-2.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 288" }
   ]
