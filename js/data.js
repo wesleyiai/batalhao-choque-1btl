@@ -20,8 +20,8 @@ const CONFIG = {
   // Para mudar o objetivo, troque o número "meta".
   // -----------------------------------------------------------
   metas: [
-    { id: "abates", nome: "Abates de Traficantes", atual: 215, meta: 15, icone: "🎯" },
-    { id: "prisoes", nome: "Prisões", atual: 314, meta: 25, icone: "🚔" },
+    { id: "abates", nome: "Abates de Traficantes", atual: 124, meta: 15, icone: "🎯" },
+    { id: "prisoes", nome: "Prisões", atual: 177, meta: 25, icone: "🚔" },
     { id: "treinos", nome: "Treinos", atual: 20, meta: 20, icone: "🏋️" }
   ],
 
