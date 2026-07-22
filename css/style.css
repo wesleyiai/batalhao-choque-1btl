@@ -648,6 +648,74 @@ footer {
 .corner-bl { bottom: 4px; left: 4px; border-right: none; border-top: none; }
 .corner-br { bottom: 4px; right: 4px; border-left: none; border-top: none; }
 
+/* CAPA DE ABATES */
+.capa-abates {
+  max-width: 720px;
+  margin: 26px auto 0;
+  padding: 0 20px;
+}
+
+.capa-abates-titulo {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-shadow: 0 0 12px rgba(212,175,55,0.4);
+  margin-bottom: 14px;
+}
+
+.capa-abates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.capa-abate-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.capa-abate-card.capa-abate-lider {
+  border-color: var(--gold);
+  box-shadow: 0 0 20px rgba(212,175,55,0.3);
+}
+
+.capa-abate-selo {
+  text-align: center;
+  background: var(--gold);
+  color: #1a1400;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.capa-abate-img {
+  display: block;
+  width: 100%;
+  background: #000;
+  object-fit: cover;
+}
+
+.capa-abate-legenda {
+  padding: 10px 14px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--text);
+  border-top: 1px solid var(--border);
+}
+
 @media (max-width: 480px) {
   header { padding: 26px 16px 20px; }
   .emblema-wrap { width: 62px; height: 62px; }
