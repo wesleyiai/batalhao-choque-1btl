@@ -79,6 +79,8 @@ const CONFIG = {
     { categoria: "treinos", arquivo: "fotos/treino-21-07-14.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #14" },
     { categoria: "treinos", arquivo: "fotos/treino-21-07-15.png", data: "21/07/2026", descricao: "Treino com Tenente Coronel Skinka #15 - 15 treinos concluídos, meta batida!" },
 
-    { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-3.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 314" }
+    { categoria: "info", arquivoAntes: "fotos/info-antes-2.png", arquivoDepois: "fotos/info-depois-3.png", data: "18/07/2026 a 21/07/2026", descricao: "Comprovação de progresso: Abates de Traficantes 91 → 215, Prisões efetuadas 137 → 314" },
+
+    { categoria: "destaques", arquivo: "fotos/destaque-kill-ltrf.png", data: "22/07/2026", descricao: "Abate do líder da facção LTRF (TOMA]RD_VG_BDJ[LTRF)" }
   ]
 };
